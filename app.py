@@ -8,41 +8,40 @@ from sklearn.cluster import KMeans
 
 
 # Initialize login state
-if "logged_in" not in st.session_state:
-    st.session_state.logged_in = False
+#if "logged_in" not in st.session_state:
+ #   st.session_state.logged_in = False
 
 # User credentials 
-USERS = {
-    "ashish@123": "ashish123",
-    "admin@gmail.com": "admin@123",
-    "rahul@321": "rahul321#",
-    "bob123@gmail.com": "bob123#"
-}
+#USERS = {
+ #  "admin@gmail.com": "admin@123",
+  #  "rahul@321": "rahul321#",
+   # "bob123@gmail.com": "bob123#"
+#}
 
-def login_page():
-    st.title("🔐 Login to StudyTrack AI")
+#def login_page():
+ #   st.title("🔐 Login to StudyTrack AI")
 
-    username = st.text_input("Username")
-    password = st.text_input("Password", type="password")
+  #  username = st.text_input("Username")
+   # password = st.text_input("Password", type="password")
 
-    if st.button("Login"):
-        if username in USERS and USERS[username] == password:
-            st.session_state.logged_in = True
-            st.session_state.username = username
-            st.success("✅ Login successful!")
-            st.rerun()
-        else:
-            st.error("❌ Invalid username or password")
+    #if st.button("Login"):
+     #   if username in USERS and USERS[username] == password:
+      #      st.session_state.logged_in = True
+       #     st.session_state.username = username
+        #    st.success("✅ Login successful!")
+         #   st.rerun()
+        #else:
+         #   st.error("❌ Invalid username or password")
 
 # If not logged in → show login page ONLY
-if not st.session_state.logged_in:
-    login_page()
-    st.stop()
+#if not st.session_state.logged_in:
+ #   login_page()
+  #  st.stop()
 
 # STOP DASHBOARD IF NOT LOGGED IN
-if not st.session_state.logged_in:
-    login_page()
-    st.stop()
+#if not st.session_state.logged_in:
+ #   login_page()
+  #  st.stop()
 
 # ------------------------------------------------
 # PAGE CONFIG
@@ -100,9 +99,9 @@ menu = st.sidebar.radio(
     ["🏠 Home", "🧠 Model Training", "📊 Data Insights", "🎓 Student", "📈 Recommendation", "📄 Documentation"]
 )
 
-if st.sidebar.button("🚪 Logout"):
-    st.session_state.logged_in = False
-    st.rerun()
+#if st.sidebar.button("🚪 Logout"):
+ #   st.session_state.logged_in = False
+  #  st.rerun()
 
 # ------------------------------------------------
 # HOME PAGE (UNCHANGED)
