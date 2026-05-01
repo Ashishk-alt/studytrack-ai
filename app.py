@@ -130,7 +130,7 @@ if menu == "🏠 Home":
     """)
 
     st.image(
-        "images.png",
+        "Images.png",
         use_container_width=True
     )
 
@@ -680,7 +680,7 @@ elif menu == "📄 Documentation":
 
     # OPTION 1: Local image (recommended)
     st.image(
-        "image2.png",   # put image in same folder as app.py
+        "Image2.png",   # put image in same folder as app.py
         width=600
     )
 
