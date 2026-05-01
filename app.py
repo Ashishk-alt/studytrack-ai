@@ -691,7 +691,7 @@ st.markdown(
     """
     <hr>
     <div style="text-align:center; color:gray; font-size:14px;">
-       © 2025 StudyTrack AI | Designed by Ashish Kumar | Trained by Anil Kumar
+       Infosys Springboard 6.0 Internship | © 2025 StudyTrack AI | Designed by Ashish Kumar | Trained by Anil Kumar
 
     </div>
     """,
